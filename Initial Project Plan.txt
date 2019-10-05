@@ -4,6 +4,11 @@ Our project is to create a piece of hardware that will clean the ocean of plasti
 helping ecosystems and wildlife recover from the massive amounts of pollution it has
 seen over the last 100 years.
 
+Github Information
+==================
+Github Repository: htabs052.github.io
+
+
 Our Company
 ========================
 Our company and product is called the GUPPI. This is an acronym stands for the 'Global

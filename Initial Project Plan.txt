@@ -1,37 +1,48 @@
 Overview of the Project
-=========================
+Initial Project Plan – Team 10
+
+Overview of the Project
+====================
 Our project is to create a piece of hardware that will clean the ocean of plastics, 
 helping ecosystems and wildlife recover from the massive amounts of pollution it has
 seen over the last 100 years.
 
 Github Information
-==================
-Github Repository: htabs052.github.io
+================
+Github Repository: https://github.com/htabs052/htabs052.github.io
 Github Accounts:
 jakekellett
 htabs052
 thuyvi-le
 cadenceyeung
 artakoroushnia
-All members have succesfully committed to github repository.
 
+Note: All members have successfully committed to the github repository.
+
+Status of Project
+==============
+Our team is currently working on our understanding of HTML, CSS and Javascript. Increasing our 
+knowledge and skill with these languages will provide us with the tools to create a website that 
+will effectively sell our product. At this time we have a rough home page created with HTML and 
+CSS on our github. This page demonstrates our general ideas of what we would like the final product 
+to look like
 
 Our Company
-========================
-Our company and product is called the GUPPI. This is an acronym stands for the 'Global
-Underwater Plastic Prevention Iniative'. Our company logo is the Guppi fish, this fish 
+===========
+Our company and product is called GUPPI. This is an acronym stands for the 'Global
+Underwater Plastic Prevention Initiative'. Our company logo is the Guppi fish, this fish 
 is very populous and comes in many different varieties and colours. We think this is an
 ideal logo as it symbolizes our goal to have diverse and healthy ecosystems.
 
 Look and Feel of the Website
-==========================
+========================
 When we picture our website we want it to feel natural and smooth, reflecting our company's 
-goal for a clean, healthy envrinonment.
+goal for a clean, healthy environment.
 
 	Colours...
-	Colours that are generally found in nature: greens, blues, and whites.These colours 
+	Colours that are generally found in nature: greens, blues, and white. These colours 
 	will all be flat as to allow the user to feel calm as one might in nature (once again 
-	reiterating,natural colours) 
+	reiterating, natural colours) 
 	Ex. 	(#78BD7D, #405674, #D0FSBD, #BBE1F4, #8ED687)
 	Or	(#BFE4FF, #AEDFE8, #CDFFF9, #AEE8D1, #BFFFD3)
 
@@ -48,10 +59,10 @@ goal for a clean, healthy envrinonment.
 
 	Images...
 	The background of the website will be a large clear image of the ocean (possibly a reef).
-	An animated video would be most desirable. Also images of polluted oceans in contrast to a clean
-	ocean to really drive the reality of the consequences of pollution home.
+	An animated video would be most desirable. Also images of polluted oceans in contrast to a 
+	clean ocean to really drive the reality of the consequences of pollution home.
 
 	Typography...
-	Although a specific font has not been decided on, we want the font to look proffesional, and be
+	Although a specific font has not been decided on, we want the font to look professional, and be
 	relatively geometric.
- 
+

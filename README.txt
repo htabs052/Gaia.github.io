@@ -1,4 +1,4 @@
-- jakekellet
+- jakekellett
 - htabs052
 - thuyvi-le
 - cadenceyeung

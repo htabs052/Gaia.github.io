@@ -1,9 +1,8 @@
-- jakekellett
-- htabs052
-- thuyvi-le
-- cadenceyeung
-- artakoroushina
-
+- https://github.com/jakekellett
+- https://github.com/htabs052
+- https://github.com/thuyvi-le
+- https://github.com/cadenceyeung
+- https://github.com/artakoroushnia
 
 
 

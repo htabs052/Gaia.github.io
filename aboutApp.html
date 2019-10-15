@@ -5,27 +5,12 @@
 
     <style>
     body{
-        background-image: url(back.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         display: block;
     }
-    #title{
-        font-family: 'Arial';
-        font-size: 60px;
-        text-align: center;
-        color: #eaeaea;
-        background-color: #00e275;
-    }
-    #description{
-        font-family: 'Arial';
-        font-size: 20px;
-        padding-left: 10px;
-        padding-right: 10px;
-        margin-left: 200;
-        color: green;
-    }
+
     #feedLight {
         max-width:1000px;
         max-height:800px;
@@ -44,43 +29,44 @@
         padding-left: 200px;
         display: none
     }
+    
+    /* Container holding the image and the text */
+    .container {
+      position: relative;
+    }
+
+    /* Bottom right text */
+    .text-block {
+      position: absolute;
+      right: 10px;
+      left: 10px;
+      bottom: 10px;
+      top: 10px;
+      background-color: rgba(209, 209, 209, 0.75);
+      color: white;
+      padding-left: 20px;
+      padding-right: 20px;
+      color: rgba(48, 48, 48, 1);
+      font-family: 'Arial';
+      font-size: 30px;
+    }
     </style>
 
+    
   </head>
   <body>
-    <div id='title'>
-      <h1>About Gaia</h1>
-    </div>
-    <div id='description'>
-      <h1>Home</h1>
-    </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    <div class="container">
+      <img src="back.png" alt="Norway" style="width:100%;">
+      <div class="text-block">
+        <h4>How does it work?</h4>
+        <p>Gaia is a social media application where you can earn points based on how much you help the environment.</p>
 
-    <img id="feedLight" src="App Screenshots/feedLight.PNG" alt="">
-    <img id="feedDark" src="App Screenshots/feedDark.PNG"  alt="">
+
+        <img id="feedLight" src="App Screenshots/feedLight.PNG" alt="">
+        <img id="feedDark" src="App Screenshots/feedDark.PNG"  alt="">
+      </div>
+    </div>
+    
   </body>
 
   

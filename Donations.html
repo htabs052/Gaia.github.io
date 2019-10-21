@@ -4,10 +4,18 @@
 
     <title>Donations</title>
 
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+		<img id="Logo" src="logo.png" alt="logo stand in" height="80">
+    <div align="right">
+			<button id="header-button"><a href="about.html">About</a></a></button>
+			<button id="header-button"><a href="teampage.html">Team</a></a></button>
+      <button id="header-button"><a href="home_page.html">Home</a></a></button>
+    </div>
     <style>
 
      body{
-      background-color:whitesmoke;
+      background-color:rgb(226, 255, 221);
       /*background-image: url(earth.jpg);*/
       background-position: center;
       background-repeat: no-repeat;
@@ -58,18 +66,26 @@
       font-size: 20px;
       color: rgb(0, 0, 0);
     }
+    #button{
+      background-color: #4CAF50;
+      border: none;
+      border-radius:12px ;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+
+      
     </style>
 
   </head>
 
   <body>
-    <img id="Logo" src="logo.png" alt="">
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
     <br>
     <br>
     <br>
@@ -104,11 +120,12 @@
     <div id='para1'>
       <p>Make a selection below : </p>
     </div>
-    <button type="button">5$</button>
-    <button type="button">10$</button>
-    <button type="button">20$</button>
-    <button type="button">50$</button>
-    <button type="button">other : </button>
-
+    <a href="#" class="button">5$</a>
+    <button class="button">10$</button>
+    <input type="button" class="button" value="50$">
+    
+<br>
+    <br>
+    <br>
   </body>
 </html>

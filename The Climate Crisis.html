@@ -3,48 +3,43 @@
     <link href="https://fonts.googleapis.com/css?family=Audiowide&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-    <title>The Problem</title>
+    <title>The Climate Crisis</title>
 
     <style>
       .wrapper{
         text-align: center;
       }
-      .button{
-        font-family: 'Audiowide', cursive;
-        font-size: 50px;
-        color: white;
-        padding-left: 0px;
-        padding-right: 0px;
-        border-style: solid;
-        border-radius: 10px;
-        border-color: #405674;
-        background-color: #405674;
-      }
-      .button:hover {
-        background-color: white;
-        color: #70E3F2;
-        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-      }
-      .links{
-        position: relative;
-        bottom: 250px;
-      }
+
       body{
-        background-image: url(plasticocean.jpg), url(treeOfLife.jpg);
+        background-image: url(Images/plasticocean.jpg), url(Images/treeOfLife.jpg);
         background-position:left top,right bottom;
         background-repeat: no-repeat, no-repeat;
         background-size: 100% 50%, auto;
      }
-      #donate{
-        float:right;
-        font-family: 'Audiowide', cursive;
-        border-style: solid;
-        border-color: red;
-        background-color: red;
-        font-size: 10px;
-        color: white;
-        border-radius: 10px;
-      }
+
+     .topnav {
+       background-color: #e0c189;
+       overflow: hidden;
+       border-radius: 10px;
+    }
+    .topnav a {
+      float: left;
+      color: #b8ff2f;
+      text-align: center;
+      padding: 14px 16px;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 25px;
+      border-radius: 10px;
+    }
+    .topnav a:hover {
+      background-color: #b8ff2f;
+      color: white;
+    }
+    .topnav a.active {
+      background-color: #b8ff2f;
+      color: white;
+    }
+
       #title{
         text-align: center;
         font-family: 'Audiowide', cursive;
@@ -100,23 +95,18 @@
   </head>
 
   <body>
-    <img id="Logo" src="logo.png" alt="">
-    <div id='donate'>
-      <button class="button" type="donate" form="donate" value="donate">Donate</button>
+    <div class="topnav">
+      <a href="#home">Home</a>
+      <a href="#About">About</a>
+      <a class="active"href="#Climate Crisis">Climate Crisis</a>
+      <a href="#Team">Team</a>
+      <a href="#Donate">Donate</a>
     </div>
-
+    <img id="Logo" src="Images/finallogo.png" alt="">
     <br>
     <br>
     <div id='title'>
       <h1>Gaia </h1>
-    </div>
-    <div class="wrapper">
-      <div class="links">
-      <button class="button" type="home" form="Home" value="home">Home</button>
-      <button class="button"type="about" form="About" value="about">About The App</button>
-      <button class="button"type="theProblem" form="The Problem" value="theProblem">The Problem</button>
-      <button class="button"type="team" form="Team" value="team">Team</button>
-      </div>
     </div>
 <div class="wrapper">
     <div id='climateInfoTitle'>
@@ -136,7 +126,7 @@
         <div id='climateInfo'>
         <h2>-The polar ice is melting at record highs</h2>
       </div>
-    <img id="natureBorder" src="natureborder.png" alt="">
+    <img id="natureBorder" src="Images/natureborder.png" alt="">
     <div id='theChange'>
       <h1>But it does not have to be this way...</h1>
       <p style=font-size:25px>With Gaia you can contribute towards planting trees and cleaning our planet from your living room couch. Download Gaia today.</p>

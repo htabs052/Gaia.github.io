@@ -3,7 +3,7 @@
     <link href="https://fonts.googleapis.com/css?family=Audiowide&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-    <title>The Climate Crisis</title>
+    <title>Gaia | The Climate Crisis</title>
 
     <style>
       .wrapper{
@@ -11,10 +11,10 @@
       }
 
       body{
-        background-image: url(Images/amazonfire.jpg), url(Images/treeOfLife.jpg);
-        background-position:left top,right bottom;
-        background-repeat: no-repeat, no-repeat;
-        background-size: 100% 1200px, auto;
+        background-image: url(Images/amazonfire.jpg);
+        background-position:left top;
+        background-repeat: no-repeat;
+        background-size: 100% 1400px;
      }
 
      .topnav {
@@ -32,21 +32,23 @@
     .topnav a:hover {
       background-color: #b8ff2f;
       color: white;
+      transition: 0.4s;
     }
     .topnav a.active {
       background-color: #b8ff2f;
       color: white;
     }
     .infonav{
-      float: left;
       color: Green;
+      position: absolute;
+      left: 170px;
       text-align: center;
       padding: 14px 16px;
       font-family: 'Open Sans', sans-serif;
       font-size: 25px;
       border-radius: 10px;
       position: absolute;
-      top: 650px;
+      top: 750px;
       border-color: grey;
     }
     .infonav button{
@@ -66,6 +68,7 @@
     }
     .infonav button:hover {
       color: white;
+      transition: 0.3s;
     }
     #textbox{
       position: absolute;
@@ -74,14 +77,18 @@
       font-family: 'Open Sans', sans-serif;
       background-color: rgba(174,230,156,.5);
       width: 940px;
-      left:-25px;
+      left:-35px;
       padding-left: 10px;
       padding-right: 10px;
     }
 
       #title{
-        height: 400px;
-        text-align: center;
+        height: 70%;
+        width: 80%;
+        padding-top: 60px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
       }
       #Logo{
         height: 80px;
@@ -92,7 +99,6 @@
         color: white;
         font-size: 20px;
         position: relative;
-        bottom: 200px;
         width:700px;
         text-align: center;
         left:300px;
@@ -119,19 +125,7 @@
       <a href="teampage.html">Team</a>
       <a href="donations.html">Donate</a>
     </div>
-    <div id='title'>
       <img id='title' src=gaia-text.png alt="">
-    </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
     <div class="wrapper">
       <div id='climateInfoTitle'>
         <h1>The World is undergoing a climate emergency...</h1>
@@ -146,66 +140,7 @@
         <p id="infotext">Click on one of the above links to explore the Climate Crisis!</p>
       </blockquote>
     </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+
     <script>
     function changetext(value)
     {
@@ -222,8 +157,13 @@
       buttonClicked.style.background ="#aee69c";
       }
       if(value==2){
+<<<<<<< HEAD
         document.getElementById("infotext").innerHTML = "Plastic";
         document.body.style.backgroundImage = "url('Images/ClimateCrisis-plastics.png')";
+=======
+        document.getElementById("infotext").innerHTML = "Did you know? Plastic has been found inside 60% of all seabirds and in every single sea turtle species. This is due to the 8 million metric tons of plastic getting dumped into our oceans annually. The impact that this unprecedented level of pollution has on our marine ecosystems goes without question. To put it in perspective, every single minute a garbage truck filled to the brim with plastic is carelessly dumped into the ocean. We have a duty to our planet and the diverse ecosystems that inhabit our waters. See for yourself the widespread impact this senseless pollution is creating on our environement:<br>https://oceanconservancy.org/trash-free-seas/plastics-in-the-ocean/";
+        document.body.style.backgroundImage = "url('Images/plasticocean.jpg')";
+>>>>>>> bbdf525f9a0f6470362413c9dba13829a90aa766
         buttonClicked  = document.getElementById("b2");
         buttonClicked.style.background ="rgba(28,133,56)";
         buttonClicked  = document.getElementById("b1");

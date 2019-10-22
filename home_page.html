@@ -1,92 +1,136 @@
 <!DOCTYPE html>
 <html>
-	<style>
-		}
-		#header {
-			background-color: white;
-		}
+		<style>
+			*, html {
+				margin: 0;
+				padding: 0;
+			}
+		</style>
+		<title>Gaia | Home Page</title>
 
-		#_GAIA_ {
-			display: block;
-			margin-left: auto;
-  			margin-right: auto;
-		}
-
-		#header-buttons {
-			object-position: relative
-
-		}
-		#row2 {
-			background-color: #b7ddd5
-		}
-		#preview {
-			position: relative;
-			top: 200px;
-		}
-    
-	</style>
-
-	<title>Gaia | Home Page</title>
-
-	<header>
-		<meta name="viewport" content="width=device-width, initial-scale=1" /> 
-		<img id="logo" src="finalLogo.png" alt="logo stand in" height="80">
-		<div id="header-buttons" align="right">
-			<button id="header-button"><a href="about.html">About</a></a></button>
-			<button id="header-button"><a href="teampage.html">Team</a></a></button>
-			<button id="header-button"><a href="Donations.html">Donate</a></a></button>
-		</div>
-	</header>
-
-	<br><br><br><br><br><br><br>
-
-	<!-- TITLE & DOWNLOAD -->
+		<!-- NAVIGATION -->
+		<header>
+			<div class="topnav">
+		      <img id="Logo" src="Images/finalLogo.png" alt="">
+		      <a class="active" href="#home">Home</a>
+		      <a href="#About">About</a>
+		      <a href="#Climate Crisis">Climate Crisis</a>
+		      <a href="#Team">Team</a>
+		      <a href="#Donate">Donate</a>
+		    </div>
+		</header>
+		<style>
+			#Logo{
+	        	height: 80px;
+	        	float: left;
+	        	padding-right: 15px;
+	    	}
+	    	.topnav {
+	       		overflow: hidden;
+	    	}
+	    	.topnav a {
+		    	float: left;
+		    	color: #b8ff2f;
+		    	text-align: center;
+		    	padding: 14px 16px;
+		    	font-family: 'Open Sans', sans-serif;
+		    	font-size: 25px;
+		    	border-radius: 10px;
+		    }
+		    .topnav a:hover {
+		    	background-color: #b8ff2f;
+		    	color: white;
+		    }
+		    .topnav a.active {
+		    	background-color: #b8ff2f;
+		    	color: white;
+		    }
+		</style>
 	<body>
-		<img id="_GAIA_" src="gaia-text.png" alt="Gaia text logo" height="400">
-		<div id="app-description" align="center">
-			<cite>Gaia</cite> is a mobile game that encourages users to clean up our planet!
-			<button id="LearnMore-button"><a href="aboutApp.html" target="_blank">Learn More >>></a></button>
-		</div>
-
-		<br>
-
-		<div id="download-options" align="center">
-			<h2 id="header-two">Download now!</h2>
-			<button id="download-button">App Store</button><button id="download-button">Google Play</button>
-		</div>
-	</body>
-
-	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-	<!-- TRAILER & PREVIEW -->
-	<body id="row2">
-		<div>
-		<iframe id="trailer" width="560" height="315" src="https://www.youtube.com/embed/yQCREgz4tQY"></iframe>
-		<img ide="preview" src="Iphone-preview.png" alt="phone-preview" width="250" align="right">
-		</div>
-	</body>
-	<!--
-	*PokemonGo trailer is just a stand in (make trailer and upload to YouTube)
-	*Trailer should be vertically center w/ phone
-	*Horizontally center phone
-	-->
-
-	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-	<!-- THE CLIMATE EMERGENCY -->
-	<body id="row3">
-		<h2 id="the-climate-emergency-header">The climate emergency</h2>
-			<div>
-				In the past few decades, we haven't been treating our home with the respect it deserves!
-				<button id="LearnMore-button"><a href="The Problem/The Problem.html" target="_blank">Learn More >>></a></button>
+		<!-- TITLE & DOWNLOAD -->
+		<div id="title-download">
+			<img id="_GAIA_" src="gaia-text.png" alt="Gaia text logo">
+			<blockquote id="app-description" align="center">
+				<cite>Gaia</cite> is a mobile game that encourages users to clean up our planet!
+				<button id="LearnMore-button"><a href="aboutApp.html" target="_blank">Learn More >>></a></button>
+			</blockquote>
+			<br>
+			<div id="download-options" align="center">
+				<h2 id="header-two">Download now!</h2>
+				<button id="download-button">App Store</button><button id="download-button">Google Play</button>
 			</div>
-	</body>
-	<!-- 
-	*Have image as bg
-	*Have the text over a solid block of colour 
-	-->
+		</div>
+		<style>
+			#title-download {
+	    		background-image: url(homePage-background.png);
+	    		background-size: 100%;
+	    		background-repeat: no-repeat;
+	    	}
+			#_GAIA_ {
+				height: 80%;
+				width: 80%;
+				padding-top: 60px;
+				display: block;
+				margin-left: auto;
+	  			margin-right: auto;
+	  		}
+	  		#download-options {
+	  			padding-bottom: 200px;
+	  		}
+		</style>
 
-	<br><br><br><br><br><br><br>
+		<!-- TRAILER & PREVIEW -->
+		<div id="tp-body">
+			<div id="trailer-preview">
+			<iframe id="trailer"  src="https://www.youtube.com/embed/yQCREgz4tQY"></iframe>
+			<img id="preview" src="Iphone-preview.png" alt="phone-preview" align="right" height="300">
+			</div>
+		</div>
+		<style>
+			#tp-body {
+				padding-top: 300px 8px 0px 8px 
+			}
+			#trailer-preview {
+				background-color: #9e6c6c;
+				height: 600px;
+				width: 100%;
+			}
+			#trailer {
+				height: 65%;
+				width: 50%;
+				margin: 100px 0px 0px 50px
+			}
+			#preview {
+				padding: 30px 130px 0px 0px;
+				height: 90%;
+				width: auto;
+			}
+		</style>
+		<!--
+		*PokemonGo trailer is just a stand in (make trailer and upload to YouTube)
+		-->
+
+		<!-- THE CLIMATE EMERGENCY -->
+		<div id="climate-emerg-bloc">
+			<div id="climate-emerg-text">
+				<h2 id="the-climate-emergency-header">The climate emergency</h2>
+				<div>
+					In the past few decades, we haven't been treating our home with the respect it deserves!
+					<button id="LearnMore-button"><a href="The Problem/The Problem.html" target="_blank">Learn More >>></a></button>
+				</div>
+			</div>
+		</div>
+		<!-- 
+		*Have image as bg
+		*Have the text over a solid block of colour 
+		-->
+		<style>
+			#climate-emerg-bloc {
+				padding: 100px 0px 0px;
+				background-color: #6ac288;
+			}
+		</style>
+	</body>
 
 	<!-- FOOTER -->
 	<footer>
@@ -95,48 +139,4 @@
 	</footer>
 	<!--
 	*Add more to footer, undecided
-
-
-	<!-- TITLE & DOWNLOAD -->
-	<body>
-		<img src="gaia-text" alt="Gaia text logo">
-		<div id="app-description" align="center">
-			<cite>Gaia</cite> is a mobile game that encourages users to clean up our planet!
-			<button id="LearnMore-button"><a href="aboutApp.html" target="_blank">Learn More >>></a></button>
-		</div>
-
-		<br>
-
-		<div id="download-options" align="center">
-			<h2 id="header-two">Download now!</h2>
-			<button id="download-button">App Store</button><button id="download-button">Google Play</button>
-		</div>
-	</body>
-
-	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-
-	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-	<!-- THE CLIMATE EMERGENCY -->
-	<body id="row3">
-		<h2 id="the-climate-emergency-header">The climate emergency</h2>
-			<div>
-				In the past few decades, we haven't been treating our home with the respect it deserves!
-				<button id="LearnMore-button"><a href="The Problem/The Problem.html" target="_blank">Learn More >>></a></button>
-			</div>
-	</body>
-	<!-- 
-	*Have image as bg
-	*Have the text over a solid block of colour 
 	-->
-
-	<br><br><br><br><br><br><br>
-
-	<!-- FOOTER -->
-	<footer>
-		<div align="center"><small><small>&copy; GUPPI 2019</small></small></div>
-		<span></span>
-	</footer>
-	<!--
-	*Add more to footer, undecided

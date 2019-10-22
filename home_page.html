@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Gaia | Home Page</title>
 	<style>
 		*, html {
 			margin: 0px;
 			padding: 0;
 		}
+	    .LearnMore-button {
+			background-color: black;
+			border: none;
+			border-radius: 5px;
+			padding: 5px 10px 5px 10px;
+		}
 	</style>
-	<title>Gaia | Home Page</title>
-
 	<!-- NAVIGATION -->
 	<header id="navigator">
 		<div class="topnav">
@@ -56,7 +61,7 @@
 			<img id="_GAIA_" src="gaia-text.png" alt="Gaia text logo">
 			<blockquote id="app-description" align="center">
 				<cite>Gaia</cite> is a mobile game that encourages users to clean up our planet!
-				<button id="LearnMore-button"><a href="aboutApp.html" target="_blank">Learn More >>></a></button>
+				<button class="LearnMore-button"><a href="aboutApp.html" target="_blank">Learn More >>></a></button>
 			</blockquote>
 			<br>
 			<div id="download-options" align="center">
@@ -65,7 +70,7 @@
 			</div>
 		</div>
 		<style>
-			#title-download {
+			body {
 	    		background-image: url(homePage-background.png);
 	    		background-size: 100%;
 	    		background-repeat: no-repeat;
@@ -93,15 +98,15 @@
 		</style>
 
 		<!-- TRAILER & PREVIEW -->
-		<div id="tp-body">
+		<span id="tp-body">
 			<div id="trailer-preview">
-			<iframe id="trailer"  src="https://www.youtube.com/embed/yQCREgz4tQY"></iframe>
-			<img id="preview" src="Iphone-preview.png" alt="phone-preview" align="right" height="300">
+				<iframe id="trailer"  src="https://www.youtube.com/embed/yQCREgz4tQY"></iframe>
+				<img id="preview" src="Iphone-preview.png" alt="phone-preview" align="right" height="300">
 			</div>
-		</div>
+		</span>
 		<style>
 			#tp-body {
-				padding-top: 300px 8px 0px 8px
+				padding: 300px 8px 0px 8px
 			}
 			#trailer-preview {
 				background-color: #9e6c6c;
@@ -109,7 +114,7 @@
 				width: 100%;
 			}
 			#trailer {
-				height: 65%;
+				height: 50%;
 				width: 50%;
 				margin: 100px 0px 0px 50px
 			}
@@ -129,7 +134,7 @@
 				<h2 id="the-climate-emergency-header">The climate emergency</h2>
 				<div>
 					In the past few decades, we haven't been treating our home with the respect it deserves!
-					<button id="LearnMore-button"><a href="The Climate Crisis.html" target="_blank">Learn More >>></a></button>
+					<button class="LearnMore-button"><a href="The Climate Crisis.html" target="_blank">Learn More >>></a></button>
 				</div>
 			</div>
 		</div>

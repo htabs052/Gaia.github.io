@@ -14,7 +14,7 @@
         background-image: url(Images/amazonfire.jpg), url(Images/treeOfLife.jpg);
         background-position:left top,right bottom;
         background-repeat: no-repeat, no-repeat;
-        background-size: 100% 50%, auto;
+        background-size: 100% 1100px, auto;
      }
 
      .topnav {
@@ -37,21 +37,48 @@
       background-color: #b8ff2f;
       color: white;
     }
-    .infonav {
-
+    .infonav{
+      float: left;
+      color: Green;
+      text-align: center;
+      padding: 14px 16px;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 25px;
+      border-radius: 10px;
+      position: absolute;
+      top: 650px;
+      border-color: grey;
+    }
+    .infonav button{
+      float: left;
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 25px;
+      border-radius: 10px;
+      background-color: #aee69c
+    }
+    .infonav p{
+      text-align: justify;
+      color: black;
+      vertical-align: text-top;
+    }
+    .infonav button:hover {
+      color: white;
+    }
+    #textbox{
+      position: absolute;
+      top: 75px;
+      border-radius: 10px;
+      font-family: 'Open Sans', sans-serif;
+      padding-bottom: 200px;
+      background-color: rgba(174,230,156,.5);
     }
 
       #title{
         height: 400px;
         text-align: center;
-      }
-      #natureBorder{
-        height:200px;
-        width:1450px;
-        position:relative;
-        bottom:200px;
-        right:100px;
-
       }
       #Logo{
         height: 80px;
@@ -76,12 +103,6 @@
         bottom:200px;
         width:500px;
         left: 200px;
-      }
-      #theChange{
-        font-family: 'Liu Jian Mao Cao', cursive;
-        color: white;
-        position: relative;
-        bottom: 150px;
       }
     </style>
   </head>
@@ -113,21 +134,124 @@
         <h1>The World is undergoing a climate emergency...</h1>
       </div>
     </div>
-      <button type="button">Click Me!</button>
-      <br>
-      <br>
-    <div id='theChange'>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <h1>But it does not have to be this way...</h1>
-      <p style=font-size:25px>With Gaia you can contribute towards planting trees and cleaning our planet from your living room couch. Download Gaia today.</p>
-
+    <div class='infonav'>
+      <button type="button" value="1" id="b1" onclick="changetext(this.value);">Deforestation</button>
+      <button type="button" value="2" id="b2"onclick="changetext(this.value);">Plastic in the Ocean</button>
+      <button type="button" value="3" id="b3"onclick="changetext(this.value);">Melting of the Icecaps</button>
+      <button type="button" value="4" id="b4"onclick="changetext(this.value);">How we help</button>
+      <blockquote id='textbox'>
+        <p id="infotext">TextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextText</p>
+      </blockquote>
     </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <script>
+    function changetext(value)
+    {
+      if (value==1){
+      document.getElementById("infotext").innerHTML = "forest";
+      buttonClicked  = document.getElementById("b1");
+      buttonClicked.style.background ="rgba(28,133,56)";
+      buttonClicked  = document.getElementById("b2");
+      buttonClicked.style.background ="#aee69c";
+      buttonClicked  = document.getElementById("b3");
+      buttonClicked.style.background ="#aee69c";
+      buttonClicked  = document.getElementById("b4");
+      buttonClicked.style.background ="#aee69c";
+      }
+      if(value==2){
+        document.getElementById("infotext").innerHTML = "Plastic";
+        buttonClicked  = document.getElementById("b2");
+        buttonClicked.style.background ="rgba(28,133,56)";
+        buttonClicked  = document.getElementById("b1");
+        buttonClicked.style.background ="#aee69c";
+        buttonClicked  = document.getElementById("b3");
+        buttonClicked.style.background ="#aee69c";
+        buttonClicked  = document.getElementById("b4");
+        buttonClicked.style.background ="#aee69c";
+      }
+      if(value==3){
+        document.getElementById("infotext").innerHTML = "icecaps";
+        buttonClicked  = document.getElementById("b3");
+        buttonClicked.style.background ="rgba(28,133,56)";
+        buttonClicked  = document.getElementById("b1");
+        buttonClicked.style.background ="#aee69c";
+        buttonClicked  = document.getElementById("b2");
+        buttonClicked.style.background ="#aee69c";
+        buttonClicked  = document.getElementById("b4");
+        buttonClicked.style.background ="#aee69c";
+      }
+      if(value==4){
+        document.getElementById("infotext").innerHTML = "help";
+        buttonClicked  = document.getElementById("b4");
+        buttonClicked.style.background ="rgba(28,133,56)";
+        buttonClicked  = document.getElementById("b1");
+        buttonClicked.style.background ="#aee69c";
+        buttonClicked  = document.getElementById("b3");
+        buttonClicked.style.background ="#aee69c";
+        buttonClicked  = document.getElementById("b2");
+        buttonClicked.style.background ="#aee69c";
+      }
+    }
+    </script>
   </body>
+
 </html>

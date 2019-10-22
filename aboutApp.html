@@ -4,6 +4,8 @@
     <title>About Gaia</title>
 
     <style>
+        
+        
     body{
         background-position: center;
         background-repeat: no-repeat;
@@ -49,11 +51,53 @@
       font-family: 'Arial';
       font-size: 30px;
     }
-    </style>
+    
+    #header {
+        background-color: white;
+    }
+    
+    #header-buttons {
+        object-position: relative
+    }
+    #row1 {
+        background-color: #b7ddd5
+    }
+    .topnav a {
+      float: left;
+      color: #b8ff2f;
+      text-align: center;
+      padding: 14px 16px;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 25px;
+      border-radius: 10px;
+    }
+    .topnav a:hover {
+      background-color: #b8ff2f;
+      color: white;
+    }
+    .topnav a.active {
+      background-color: #b8ff2f;
+      color: white;
+    }
+    #about{
+      float:center;
+      font-family: Georgia, serif;
+      font-size: 35px;
+      color:rgb(121, 255, 59);
+    }
 
+    </style>
     
   </head>
-  <body>
+  <body id="row1">
+    <div class="topnav">
+      <img id="Logo" src="Images/finalLogo.png" alt="logo stand in" height="80">
+      <a href="#home">Home</a>
+      <a class="active"href="#About">About</a>
+      <a href="#the Climate Crisis">Climate Crisis</a>
+      <a href="#Team">Team</a>
+      <a href="#Donations">donate</a>
+    </div>
     <div class="container">
       <img src="back.png" alt="" style="width:100%;">
       <div class="text-block">

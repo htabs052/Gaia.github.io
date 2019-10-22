@@ -14,7 +14,7 @@
         background-image: url(Images/amazonfire.jpg), url(Images/treeOfLife.jpg);
         background-position:left top,right bottom;
         background-repeat: no-repeat, no-repeat;
-        background-size: 100% 1100px, auto;
+        background-size: 100% 1200px, auto;
      }
 
      .topnav {
@@ -61,7 +61,7 @@
     }
     .infonav p{
       text-align: justify;
-      color: black;
+      color: white;
       vertical-align: text-top;
     }
     .infonav button:hover {
@@ -70,10 +70,13 @@
     #textbox{
       position: absolute;
       top: 75px;
-      border-radius: 10px;
+      border-radius: 20px;
       font-family: 'Open Sans', sans-serif;
-      padding-bottom: 200px;
       background-color: rgba(174,230,156,.5);
+      width: 940px;
+      left:-25px;
+      padding-left: 10px;
+      padding-right: 10px;
     }
 
       #title{
@@ -140,7 +143,7 @@
       <button type="button" value="3" id="b3"onclick="changetext(this.value);">Melting of the Icecaps</button>
       <button type="button" value="4" id="b4"onclick="changetext(this.value);">How we help</button>
       <blockquote id='textbox'>
-        <p id="infotext">TextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextText</p>
+        <p id="infotext">Click on one of the above links to explore the Climate Crisis!</p>
       </blockquote>
     </div>
     <br>
@@ -207,7 +210,8 @@
     function changetext(value)
     {
       if (value==1){
-      document.getElementById("infotext").innerHTML = "forest";
+      document.getElementById("infotext").innerHTML = "Forests around the world, on every continent are under attack. During the one minute that you visited our website 27 soccer fields of trees have been cut down. That is equivalent to 18.7 million acres every single year. These losses are primarily due to expanding agriculture and fires. Mike Flannigan, a researcher for the Canadian Forest Service, found that climate change will worsen the frequency of wildfires. This is due to the abundance of dry wood, frequent lightning strikes and dry windy weather which is caused by climate change. For further reading we recommend:<br> https://climateatlas.ca/forest-fires-and-climate-change<br>https://www.worldwildlife.org/threats/deforestation-and-forest-degradation";
+      document.body.style.backgroundImage = "url('Images/amazonfire.jpg')";
       buttonClicked  = document.getElementById("b1");
       buttonClicked.style.background ="rgba(28,133,56)";
       buttonClicked  = document.getElementById("b2");
@@ -219,6 +223,7 @@
       }
       if(value==2){
         document.getElementById("infotext").innerHTML = "Plastic";
+        document.body.style.backgroundImage = "url('Images/plasticocean.jpg')";
         buttonClicked  = document.getElementById("b2");
         buttonClicked.style.background ="rgba(28,133,56)";
         buttonClicked  = document.getElementById("b1");

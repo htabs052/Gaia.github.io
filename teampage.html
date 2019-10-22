@@ -1,65 +1,138 @@
-<!DOCTYPE html>
 <html>
-<body style="background-color:powderblue;">
-<head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Audiowide&display=swap" rel="stylesheet">
+<title>Gaia | Our Team</title>
 <style>
-* {
-  box-sizing: border-box;
-}
+  body {
+    background-image: url(Images/teamPage-background.png);
+    background-size: 100%;
+    }
 
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 10px;
-  height: 300px;
-}
+  h1 {
+    color: white;
+  }
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+  h5 {
+    color: white;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 300px;
+    }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+  .topnav {
+    overflow: hidden;
+  }
+  .topnav a {
+    float: left;
+    color: #b8ff2f;
+    text-align: center;
+    padding: 14px 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+    border-radius: 10px;
+    }
+  .topnav a:hover {
+    background-color: #b8ff2f;
+    color: white;
+    transition: 0.4s;
+    }
+  .topnav a.active {
+    background-color: #b8ff2f;
+    color: white;
+  }
+  #Logo{
+    height: 80px;
+    float: left;
+    }
+  /* Container holding the image and the text */
+  .container {
+    position: relative;
+    }
+
+  .text-block {
+    position: absolute;
+    right: 10px;
+    left: 10px;
+    bottom: 10px;
+    top: 10px;
+    background-color: rgba(209, 209, 209, 0.75);
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: rgba(48, 48, 48, 1);
+    font-family: 'Arial';
+    font-size: 30px;
+    }
 </style>
-</head>
+
 <body>
+    <header>
+      <div class="topnav">
+        <img id="Logo" src="Images/finallogo.png" alt="">
+        <a href="home_page.html">Home</a>
+        <a href="aboutApp.html">About</a>
+        <a href="the Climate Crisis.html">Climate Crisis</a>
+        <a class="active"href="teampage.html">Team</a>
+        <a href="donations.html">Donate</a>
+      </div>
+    </header>
 
-<h1><center>Our Team<center></h1>
 
-<div class="row">
-  <div class="column" style="background-color:#aaa;">
-<img src="/Users/Cadence/downloads/jakepaul.jpg" alt="Jake Paul" width="200" height="200">
-<h2><strong>Jake Kellett</strong></h2>
-<p>Jake is cool</p>
+  </head>
+
+    <div class="container">
+      <div class="text-block">
+      <div style="text-align: center;">
+        <h1>Our Team</h1>
+        <p>Meet the people that created Gaia.</p>
+
+      </div>
+
+
+
+ <div class="row">
+  <div class="column" style="background-color:#lightblue;">
+<img src="https://ksassets.timeincuk.net/wp/uploads/sites/55/2018/01/Jake-Paul-920x584.jpg" alt="Jake Paul";
+style="width: 200px; height: 150px">
+<h5><strong>Jake Kellett</strong></h5>
 </div>
 
 <div class="row">
-  <div class="column" style="background-color:#aaa;">
-<img src="/Users/Cadence/downloads/anthonytrujillo.jpg" alt="Anthony Trujillo" width="230" height="200">
-<h2><strong>Arta Kouroshnia</strong></h2>
-<p>Arta is cool</p>
+  <div class="column" style="background-color:#lightblue;">
+<img src="https://www.thefamouspeople.com/profiles/images/anthony-trujillo-1.jpg" alt="Anthony Trujillo" width="200px" height="150px">
+<h5><strong>Arta Kouroshnia</strong></h5>
 </div>
 
 <div class="row">
-  <div class="column" style="background-color:#aaa;">
-<img src="/Users/Cadence/downloads/erikacostell.jpg" alt="Erika Costell" width="140" height="200">
-<h2><strong>Thuy-Vi Le</strong></h2>
-<p>Thuy-Vi is cool</p>
+  <div class="column" style="background-color:#lightblue;">
+  <img src="https://img2.nickiswift.com/img/gallery/the-untold-truth-of-erika-costell/erika-costell-was-a-cheerleader-before-she-was-a-model-1570819683.jpg" alt="Erika Costell" width="200px" height="150px">
+  <h5><strong>Thuy-Vi Le</strong></h5>
 </div>
 
 <div class="row">
-  <div class="column" style="background-color:#aaa;">
-<img src="/Users/Cadence/downloads/chancesutton.jpg" alt="Chance Sutton" width="200" height="200">
-<h2><strong>Hicham Tabsissi</strong></h2>
-<p>Hicham is cool</p>
+  <div class="column" style="background-color:#lightblue;">
+  <img src="https://marriedbiography.com/wp-content/uploads/2018/02/Chance-Sutton.jpg" alt="Chance Sutton" width="200px" height="150px">
+  <h5><strong>Hicham Tabsissi</strong></h5>
 </div>
 
 <div class="row">
-  <div class="column" style="background-color:#aaa;">
-<img src="/Users/Cadence/downloads/tessabrooks.jpg" alt="Tessa Brooks" width="200" height="200">
-<h2><strong>Cadence Yeung</strong></h2>
-<p>Cadence is cool</p>
+  <div class="column" style="background-color:#lightblue;">
+  <img src="https://www.tubefilter.com/wp-content/uploads/2018/01/tessa-team-10.jpg" alt="Tessa Brooks" width="200px" height="150px">
+  <h5><strong>Cadence Yeung</strong></h5>
 </div>
+  </body>
 
-</body>
 </html>

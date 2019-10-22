@@ -1,9 +1,11 @@
 <html>
   <head>
     <link href="https://fonts.googleapis.com/css?family=Audiowide&display=swap" rel="stylesheet">
-    <title>About Gaia</title>
+    <title>Gaia | About</title>
 
     <style>
+
+
     body{
         background-position: center;
         background-repeat: no-repeat;
@@ -29,7 +31,11 @@
         margin-left: auto;
         margin-right: auto;
     }
-    
+    #Logo{
+      height: 80px;
+      float: left;
+    }
+
     /* Container holding the image and the text */
     .container {
       position: relative;
@@ -49,11 +55,57 @@
       font-family: 'Arial';
       font-size: 30px;
     }
+
+    #header {
+        background-color: white;
+    }
+
+    #header-buttons {
+        object-position: relative
+    }
+    #row1 {
+        background-color: #b7ddd5
+    }
+    .topnav {
+      overflow: hidden;
+   }
+    .topnav a {
+      float: left;
+      color: #b8ff2f;
+      text-align: center;
+      padding: 14px 16px;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 25px;
+      border-radius: 10px;
+    }
+    .topnav a:hover {
+      background-color: #b8ff2f;
+      color: white;
+      transition: 0.4s;
+    }
+    .topnav a.active {
+      background-color: #b8ff2f;
+      color: white;
+    }
+    #about{
+      float:center;
+      font-family: Georgia, serif;
+      font-size: 35px;
+      color:rgb(121, 255, 59);
+    }
+
     </style>
 
-    
   </head>
-  <body>
+  <body id="row1">
+    <div class="topnav">
+      <img id="Logo" src="Images/finalLogo.png" alt="logo stand in" height="80">
+      <a href="home_page.html">Home</a>
+      <a class="active"href="aboutApp.html">About</a>
+      <a href="the Climate Crisis.html">Climate Crisis</a>
+      <a href="teampage.html">Team</a>
+      <a href="donations.html">Donate</a>
+    </div>
     <div class="container">
       <img src="back.png" alt="" style="width:100%;">
       <div class="text-block">
@@ -66,21 +118,21 @@
         <img id="feedDark" src="App Screenshots/feedDark.PNG"  alt="">
       </div>
     </div>
-    
+
   </body>
 
-  
+
 </html>
 
 <script>
 
     var modeBtn = document.getElementById("modeBtn");
     modeBtn.addEventListener("click", changeMode);
-    
+
     var lightFeed = document.getElementById("feedLight");
     var darkFeed = document.getElementById("feedDark");
 
-    
+
     function changeMode() {
         if (lightFeed.style.display == "none"){
             console.log("Switching to light mode");

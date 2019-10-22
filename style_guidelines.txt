@@ -1,0 +1,35 @@
+Style Guidelines
+Team 10
+
+What overall aesthetic feeling do you want?
+Environmental vibes
+Calm
+Natural
+Cute, cartoon-ish
+
+What colours will be used?
+#6ac288
+#aee69c
+#b2f3eb
+#70acbd
+#554ea2
+
+What fonts will be used?
+Delius (for headers)
+Open Sans (for paragraphs)
+
+What will the links and buttons look like?
+Rounded corners
+Buttons will grow in size and subtly change in colour (turns a darker colour) when the user hovers over it
+Links won’t change colours after being clicked
+
+What will the tables look like?
+Round cells (teampage)
+
+What will the icons look like?
+Simple
+Clean
+Smooth
+Flat coloring
+Shadow (bottom-right)
+Include social media icons

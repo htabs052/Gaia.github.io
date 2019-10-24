@@ -8,16 +8,16 @@
 			padding: 0;
 		}
 	    .LearnMore-button {
-			background-color: #b8ff2f;
+			background-color: #6ac288;
 			border: none;
 			border-radius: 5px;
 			padding: 14px 16px;
 			font-size: 14px;
 		}
 		.LearnMore-button:hover {
-			font-size: 19px;
-			padding: 20px 24px;
+			transform: scale(1.1);
 			transition: 0.4s;
+			box-shadow: 8px 8px rgba(0,0,0,.4)
 		}
 		.LearnMore-button a:link {
 			text-decoration: none;
@@ -56,7 +56,7 @@
     	}
     	.topnav a {
 	    	float: left;
-	    	color: #b8ff2f;
+	    	color: white;
 	    	text-decoration: none;
 	    	text-align: center;
 	    	padding: 14px 16px;
@@ -65,19 +65,17 @@
 	    	border-radius: 10px;
 	    }
 	    .topnav a:hover {
-	    	background-color: #b8ff2f;
+	    	background-color: white;
 	    	color: black;
 			transition: 0.4s;
 	      	padding: 10px;
 	      	box-shadow: 10px 10px rgba(0,0,0,.4);
-				border-color: black
 	    }
 	    .topnav a.active {
-	    	background-color: #b8ff2f;
+	    	background-color: white;
 	    	color: black;
-	      padding: 10px;
-	      box-shadow: 10px 10px rgba(0,0,0,.4);
-				border-color: black;
+	    	padding: 10px;
+	      	box-shadow: 10px 10px rgba(0,0,0,.4);
 	    }
 	</style>
 
@@ -109,13 +107,13 @@
 			#_GAIA_ {
 				height: 80%;
 				width: 80%;
-				padding-top: 60px;
+				margin-top: 60px;
 				display: block;
 				margin-left: auto;
 	  			margin-right: auto;
 	  		}
 	  		#download-options {
-	  			padding-bottom: 200px;
+	  			margin-bottom: 200px;
 	  		}
 	  		#downloadNow {
 	  			font-size: 30px;
@@ -125,12 +123,12 @@
 	  			width: 20%;
 	  		}
 	  		.downloadButton:hover {
-	  			transition: scale(1.2);
+	  			transform: scale(1.1);
 	  			transition: 0.4s;
 	  		}
 	  		#app-description {
 	  			margin: 0px 100px 0px 100px;
-	  			padding: 20px 20px 20px 20px;
+	  			padding: 20px;
 	  			background-color: rgba(0,0,0,.7);
 	  			font-family: 'Open Sans', sans-serif;
 	  			font-size: 30px;
@@ -148,10 +146,10 @@
 		</span>
 		<style>
 			#tp-body {
-				padding: 300px 8px 0px 8px
+				padding: 300px 10px 0px 10px;
 			}
 			#trailer-preview {
-				background-color: #9e6c6c;
+				background-color: #70acbd;
 				height: 600px;
 				width: 100%;
 			}
@@ -172,8 +170,8 @@
 
 		<!-- THE CLIMATE EMERGENCY -->
 		<div id="climate-emerg-bloc">
-			<div id="climate-emerg-text">
-				<h2 id="the-climate-emergency-header">The climate emergency</h2>
+			<div id="climate-emerg-allText">
+				<h2 class="textHeader">The climate emergency</h2>
 				<div>
 					In the past few decades, we haven't been treating our home with the respect it deserves!
 					<button class="LearnMore-button"><a href="The Climate Crisis.html" target="_blank">Learn More >>></a></button>
@@ -186,8 +184,19 @@
 		-->
 		<style>
 			#climate-emerg-bloc {
-				padding: 100px 0px 100px 50px;
-				background-color: #6ac288;
+				background-color: #ff8e72;
+				padding: 300px 10px 0px 10px;
+			}
+			#climate-emerg-allText {
+				background-color: rgba(0,0,0,.7);
+				border-radius: 15px;
+				height: 50%;
+				width: 50%;
+				padding: 20px;
+				color: white;
+			}
+			.textHeader {
+				font-family: 'Delius', cursive;
 			}
 		</style>
 	</body>

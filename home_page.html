@@ -11,9 +11,23 @@
 			background-color: #b8ff2f;
 			border: none;
 			border-radius: 5px;
-			padding: 5px 10px 5px 10px;
+			padding: 14px 16px;
+			font-size: 14px;
+		}
+		.LearnMore-button:hover {
+			font-size: 19px;
+			padding: 20px 24px;
+			transition: 0.4s;
+		}
+		.LearnMore-button a:link {
+			text-decoration: none;
 			color: white;
-			text-decoration-style: none;
+			transition: 0.4s;
+		}
+		/*
+		.LearnMore-button a:hover {
+			transform: scale(2);
+			transition: 0.4s;
 		}
 	</style>
 
@@ -43,6 +57,7 @@
     	.topnav a {
 	    	float: left;
 	    	color: #b8ff2f;
+	    	text-decoration: none;
 	    	text-align: center;
 	    	padding: 14px 16px;
 	    	font-family: 'Open Sans', sans-serif;
@@ -52,18 +67,16 @@
 	    .topnav a:hover {
 	    	background-color: #b8ff2f;
 	    	color: black;
-				transition: 0.4s;
-				border: 1px solid;
-	      padding: 10px;
-	      box-shadow: 5px 10px 18px black;
+			transition: 0.4s;
+	      	padding: 10px;
+	      	box-shadow: 10px 10px rgba(0,0,0,.4);
 				border-color: black
 	    }
 	    .topnav a.active {
 	    	background-color: #b8ff2f;
 	    	color: black;
-				border: 1px solid;
 	      padding: 10px;
-	      box-shadow: 5px 10px 18px black;
+	      box-shadow: 10px 10px rgba(0,0,0,.4);
 				border-color: black;
 	    }
 	</style>
@@ -78,8 +91,13 @@
 			</blockquote>
 			<br>
 			<div id="download-options" align="center">
+				<h2 id="downloadNow">Download now!</h2>
+				<a href="#AppStore" target="_blank"><img class="downloadButton" src="Images/download-AppStore.png" alt="App Store download button"></a>
+				<a href="#GooglePlay" target="_blank"><img class="downloadButton" src="Images/download-GooglePlay.png" alt="App Store download button"></a>
+			<!--
 				<h2 id="header-two">Download now!</h2>
 				<button id="download-button">App Store</button><button id="download-button">Google Play</button>
+			-->
 			</div>
 		</div>
 		<style>
@@ -98,6 +116,17 @@
 	  		}
 	  		#download-options {
 	  			padding-bottom: 200px;
+	  		}
+	  		#downloadNow {
+	  			font-size: 30px;
+	  		}
+	  		.downloadButton {
+	  			height: 20%;
+	  			width: 20%;
+	  		}
+	  		.downloadButton:hover {
+	  			transition: scale(1.2);
+	  			transition: 0.4s;
 	  		}
 	  		#app-description {
 	  			margin: 0px 100px 0px 100px;
@@ -127,8 +156,8 @@
 				width: 100%;
 			}
 			#trailer {
-				height: 50%;
-				width: 50%;
+				height: 60%;
+				width: 45%;
 				margin: 100px 0px 0px 50px
 			}
 			#preview {

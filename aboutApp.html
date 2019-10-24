@@ -39,7 +39,77 @@
 
     }
     
-    #
+    #profileLight{
+        max-width:900px;
+        max-height:700px;
+        width:auto;
+        height:auto;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    
+    #profileDark{
+        max-width:900px;
+        max-height:700px;
+        width:auto;
+        height:auto;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    
+    #profileTopLight{
+        max-width:900px;
+        max-height:700px;
+        width:auto;
+        height:auto;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    
+    #profileTopDark{
+        max-width:900px;
+        max-height:700px;
+        width:auto;
+        height:auto;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    
+    #cameraLight{
+        max-width:900px;
+        max-height:700px;
+        width:auto;
+        height:auto;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    
+    #cameraDark{
+        max-width:900px;
+        max-height:700px;
+        width:auto;
+        height:auto;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
     
     #Logo{
       height: 80px;
@@ -120,6 +190,35 @@
        text-decoration: bold;
        transform: translate(-50%, -50%);
     }
+    #overlay {
+        position: absolute; /* Sit on top of the page content */
+        display: block; /* Hidden by default */
+     
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0,0,0,0); /* Black background with opacity */
+        z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+        cursor: pointer; /* Add a pointer on hover */
+        
+        max-width:300px;
+        max-height:700px;
+        width:auto;
+        height:auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+        margin-top: 150px;
+    }
+    
+    #modeBtn{
+        
+    }
+    
+    #resetBtn{
+        display: none;
+    }
 
     </style>
 
@@ -141,11 +240,23 @@
       <div class="text-block">
         <p>Gaia is a social media application where you can earn points based on your contribution to helping the environment.</p>
         <button id="modeBtn">View in Dark Mode</button>
-        <img id="feedLight" src="Images/App Screenshots/feedLight.PNG" alt="">
-        <img id="feedDark" src="Images/App Screenshots/feedDark.PNG"  alt="">
+        <button id="resetBtn">Reset Previews</button>
+        
+        <img id="feedLight" src="Images/AboutPage/App Screenshots/feedLight.PNG" alt="">
+        <img id="feedDark" src="Images/AboutPage/App Screenshots/feedDark.PNG"  alt="">
+            
+        <img id="profileLight" src="Images/AboutPage/App Screenshots/profileLight.PNG" alt="">
+        <img id="profileDark" src="Images/AboutPage/App Screenshots/profileDark.PNG"  alt="">
+
+        <img id="profileTopLight" src="Images/AboutPage/App Screenshots/profileTopLight.PNG" alt="">
+        <img id="profileTopDark" src="Images/AboutPage/App Screenshots/profileTopDark.PNG"  alt="">
+
+        <img id="cameraLight" src="Images/AboutPage/App Screenshots/cameraLight.PNG" alt="">
+        <img id="cameraDark" src="Images/AboutPage/App Screenshots/cameraDark.PNG"  alt="">
+        <div id="overlay"></div>
       </div>
     </div>
-
+    </div>
   </body>
 
 
@@ -154,46 +265,124 @@
 <script>
 
     var modeBtn = document.getElementById("modeBtn");
+    var resetBtn = document.getElementById("resetBtn");
+    resetBtn.style.display = "block";
+    resetBtn.disabled = true;
+
     var isDark = false;
     modeBtn.addEventListener("click", changeMode);
+    resetBtn.addEventListener("click", resetAppImages);
 
     var lightFeed = document.getElementById("feedLight");
     var darkFeed = document.getElementById("feedDark");
-
-    lightFeed.addEventListener("mouseover", changeAppViewsLight);
-    darkFeed.addEventListener("mouseover", changeAppViewsDark);
-
+    var lightProf = document.getElementById("profileLight");
+    var darkProf = document.getElementById("profileDark");
+    var lightProfTop = document.getElementById("profileTopLight");
+    var darkProfTop = document.getElementById("profileTopDark");
+    var lightCam = document.getElementById("cameraLight");
+    var darkCam = document.getElementById("cameraDark");
     
-    function changeAppViewsLight(){
-        window.setInterval(changePage, 2000);
+    var overlay = document.getElementById("overlay");
+
+    lightImages = [lightFeed, lightCam, lightProfTop, lightProf];
+    darkImages = [darkFeed, darkCam, darkProfTop, darkProf];
+
+    var pageIndex = 0;
+    var currentLight = lightImages[0];
+    var currentDark = darkImages[0];
+
+    overlay.addEventListener("mouseover", changeAppImages);
+    overlay.addEventListener("mouseout", stopAnimation);
+    var timer;
+    
+    function changeAppImages(){
+        console.log("Showing reset button")
+        timer = window.setInterval(changePage, 2500);
     }
 
-    function changeAppViewsDark(){
-        window.setInterval(changePage, 2000);
+    function stopAnimation(){
+        window.clearInterval(timer);
+    }
+
+    function resetAppImages(){
+        resetBtn.disabled = true;
+        pageIndex = 0;
+        console.log("resetting");
+        currentDark.style.display = "none";
+        currentDark = darkImages[pageIndex];
+        
+        currentLight.style.display = "none";
+        currentLight = lightImages[pageIndex];
+        
+        if (isDark){
+            currentDark.style.display = "block";
+            fadeIn(currentDark, 1000)
+            console.log("next page dark");
+        }
+        else{
+            currentLight.style.display =  "block";
+            fadeIn(currentLight, 1000)
+            console.log("next page light");
+        }
+    }
+
+    function fadeIn(el, time) {
+        el.style.opacity = 0.5;
+
+      var last = +new Date();
+      var tick = function() {
+        el.style.opacity = +el.style.opacity + (new Date() - last) / time;
+        last = +new Date();
+
+        if (+el.style.opacity < 1) {
+          (window.requestAnimationFrame && requestAnimationFrame(tick)) || setTimeout(tick, 16);
+        }
+      };
+      tick();
     }
 
     function changePage(){
         
-        if (isDark){
+        if (resetBtn.disabled){
+            resetBtn.disabled = false;
+        }
+        pageIndex += 1;
+        
+        if (pageIndex == 4){
+            pageIndex = 0;
+        }
+        
+        currentDark.style.display =  "none";
+        currentDark = darkImages[pageIndex];
             
+        currentLight.style.display =  "none";
+        currentLight = lightImages[pageIndex]
+        
+        if (isDark){
+            currentDark.style.display =  "block";
+            fadeIn(currentDark, 1000)
+            console.log("next page dark");
         }
         else{
-            
+            currentLight.style.display =  "block";
+            fadeIn(currentLight, 1000)
+            console.log("next page light");
         }
     }
 
     function changeMode() {
-        if (lightFeed.style.display == "none"){
+        
+        if (isDark){
             console.log("Switching to light mode");
-            lightFeed.style.display = "block";
-            darkFeed.style.display = "none";
+            currentLight.style.display = "block";
+            currentDark.style.display = "none";
             modeBtn.innerText = "View in Dark Mode";
             isDark = false;
         }
         else{
             console.log("Switching to dark mode");
-            darkFeed.style.display = "block";
-            lightFeed.style.display = "none";
+            currentDark.style.display = "block";
+            currentLight.style.display = "none";
             modeBtn.innerText = "View in Light Mode";
             isDark = true;
         }

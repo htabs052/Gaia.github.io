@@ -11,9 +11,11 @@
         background-repeat: no-repeat;
         background-size: cover;
         display: block;
+        margin-bottom: 10px;
     }
 
     #feedLight {
+        
         max-width:900px;
         max-height:700px;
         width:auto;
@@ -21,6 +23,8 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: 10px;
+        margin-top: 10px;
     }
     #feedDark {
         max-width:900px;
@@ -30,29 +34,104 @@
         display: none;
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: 10px;
+        margin-top: 10px;
+
     }
+    
+    #profileLight{
+        max-width:900px;
+        max-height:700px;
+        width:auto;
+        height:auto;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    
+    #profileDark{
+        max-width:900px;
+        max-height:700px;
+        width:auto;
+        height:auto;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    
+    #profileTopLight{
+        max-width:900px;
+        max-height:700px;
+        width:auto;
+        height:auto;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    
+    #profileTopDark{
+        max-width:900px;
+        max-height:700px;
+        width:auto;
+        height:auto;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    
+    #cameraLight{
+        max-width:900px;
+        max-height:700px;
+        width:auto;
+        height:auto;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    
+    #cameraDark{
+        max-width:900px;
+        max-height:700px;
+        width:auto;
+        height:auto;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    
     #Logo{
       height: 80px;
       float: left;
     }
-
+    
     /* Container holding the image and the text */
     .container {
       position: relative;
     }
 
     .text-block {
-      position: absolute;
-      right: 10px;
-      left: 10px;
-      bottom: 10px;
-      top: 10px;
-      background-color: rgba(209, 209, 209, 0.75);
+      position: relative;
+      right: 0px;
+      left: 0px;
+      bottom: 0px;
+      top: 0px;
+      background-color: rgba(209, 209, 209, 0.25);
       color: white;
-      padding-left: 20px;
-      padding-right: 20px;
-      color: rgba(48, 48, 48, 1);
-      font-family: 'Arial';
+      padding-left: 30px;
+      padding-right: 30px;
+      font-family: 'Arial Rounded MT Bold';
       font-size: 30px;
     }
 
@@ -61,46 +140,106 @@
     }
 
     #header-buttons {
-        object-position: relative
+        object-position: relative;
     }
     #row1 {
-        background-color: #b7ddd5
+        background-color: #54c6ff;
     }
     .topnav {
       overflow: hidden;
    }
-    .topnav a {
-      float: left;
-      color: #b8ff2f;
-      text-align: center;
-      padding: 14px 16px;
-      font-family: 'Open Sans', sans-serif;
-      font-size: 25px;
-      border-radius: 10px;
-    }
-    .topnav a:hover {
-      background-color: #b8ff2f;
-      color: black;
-      transition: 0.4s;
-      border: 1px solid;
-      padding: 10px;
-      box-shadow: 5px 10px 18px black;
-      border-color: black;
-    }
-    .topnav a.active {
-      background-color: #b8ff2f;
-      color: black;
-      border: 1px solid;
-      padding: 10px;
-      box-shadow: 5px 10px 18px black;
-      border-color: black;
-    }
+	  .topnav a {
+	    float: left;
+	    color: white;
+	    text-decoration: none;
+	    text-align: center;
+	    padding: 14px 16px;
+	    font-family: 'Open Sans', sans-serif;
+	    font-size: 25px;
+	    border-radius: 10px;
+	    margin-right: 8px;
+	  }
+	  .topnav a:hover {
+	    background-color: white;
+	    color: black;
+	    transition: 0.4s;
+	    padding: 10px;
+	    box-shadow: 10px 10px rgba(0,0,0,.4);
+	  }
+	  .topnav a.active {
+	    background-color: white;
+	    color: black;
+	    padding: 10px;
+	    box-shadow: 10px 10px rgba(0,0,0,.4);
+	    }
     #about{
       float:center;
       font-family: Georgia, serif;
       font-size: 35px;
       color:rgb(121, 255, 59);
     }
+    .centered{
+       position: absolute;
+       top: 5%;
+       left: 50%;
+       color:white;
+       font-family: 'Arial Rounded MT Bold';
+       font-size: 30px;
+       text-decoration: bold;
+       transform: translate(-50%, -50%);
+    }
+    #overlay {
+        position: absolute; /* Sit on top of the page content */
+        display: block; /* Hidden by default */
+     
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0,0,0,0); /* Black background with opacity */
+        z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+        cursor: pointer; /* Add a pointer on hover */
+        
+        max-width:300px;
+        max-height:700px;
+        width:auto;
+        height:auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+        margin-top: 150px;
+    }
+    
+    #modeBtn{
+        color: #b8ff2f;
+        text-align: center;
+        padding: 14px 16px;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 25px;
+        border-radius: 10px;
+        background-color: rgba(0.5,0.5,0.5,0.1);
+    }
+    
+    #resetBtn{
+        float: right;
+        color: #b8ff2f;
+        text-align: center;
+        padding: 14px 16px;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 25px;
+        border-radius: 10px;
+        background-color: rgba(0.5,0.5,0.5,0.1);
+
+    }
+    
+    #PhoneInfo{
+        font-family: 'Arial Rounded MT Bold';
+        position: relative;
+        text-align: center;
+        font-size: 20px;
+        text-decoration: bold;
+    }
+  
 
     </style>
 
@@ -115,18 +254,36 @@
       <a href="donations.html">Donate</a>
     </div>
     <div class="container">
-      <img src="Images/back.png" alt="" style="width:100%;">
+      <img src="Images/aboutApp-background.png" alt="" style="width:100%;">
+        <div class = "centered">
+            <h1>How Gaia Works</h1>
+        </div>
       <div class="text-block">
-        <h4>How does it work?</h4>
-        <p>Gaia is a social media application where you can earn points based on how much you help the environment.</p>
+        <p>Gaia is a social media application where you can earn points based on your contribution to helping the environment.</p>
+        <div id= "PhoneInfo">
+            <p>Hover your mouse over the phone to view screenshots of the Gaia mobile app<p>
+        </div>
+        <br>
+        <div class="buttons">
         <button id="modeBtn">View in Dark Mode</button>
+        <button id ="resetBtn" disabled>Reset App Page(s)</button>
+        </div>
 
+        <img id="feedLight" src="Images/AboutPage/App Screenshots/feedLight.PNG" alt="">
+        <img id="feedDark" src="Images/AboutPage/App Screenshots/feedDark.PNG"  alt="">
+            
+        <img id="profileLight" src="Images/AboutPage/App Screenshots/profileLight.PNG" alt="">
+        <img id="profileDark" src="Images/AboutPage/App Screenshots/profileDark.PNG"  alt="">
 
-        <img id="feedLight" src="Images/App Screenshots/feedLight.PNG" alt="">
-        <img id="feedDark" src="Images/App Screenshots/feedDark.PNG"  alt="">
+        <img id="profileTopLight" src="Images/AboutPage/App Screenshots/profileTopLight.PNG" alt="">
+        <img id="profileTopDark" src="Images/AboutPage/App Screenshots/profileTopDark.PNG"  alt="">
+
+        <img id="cameraLight" src="Images/AboutPage/App Screenshots/cameraLight.PNG" alt="">
+        <img id="cameraDark" src="Images/AboutPage/App Screenshots/cameraDark.PNG"  alt="">
+        <div id="overlay"></div>
       </div>
     </div>
-
+    </div>
   </body>
 
 
@@ -135,24 +292,126 @@
 <script>
 
     var modeBtn = document.getElementById("modeBtn");
+    var resetBtn = document.getElementById("resetBtn");
+    resetBtn.style.display = "block";
+    resetBtn.disabled = true;
+
+    var isDark = false;
     modeBtn.addEventListener("click", changeMode);
+    resetBtn.addEventListener("click", resetAppImages);
 
     var lightFeed = document.getElementById("feedLight");
     var darkFeed = document.getElementById("feedDark");
+    var lightProf = document.getElementById("profileLight");
+    var darkProf = document.getElementById("profileDark");
+    var lightProfTop = document.getElementById("profileTopLight");
+    var darkProfTop = document.getElementById("profileTopDark");
+    var lightCam = document.getElementById("cameraLight");
+    var darkCam = document.getElementById("cameraDark");
+    
+    var overlay = document.getElementById("overlay");
 
+    lightImages = [lightFeed, lightCam, lightProfTop, lightProf];
+    darkImages = [darkFeed, darkCam, darkProfTop, darkProf];
+
+    var pageIndex = 0;
+    var currentLight = lightImages[0];
+    var currentDark = darkImages[0];
+
+    overlay.addEventListener("mouseover", changeAppImages);
+    overlay.addEventListener("mouseout", stopAnimation);
+    var timer;
+    
+    function changeAppImages(){
+        console.log("Showing reset button")
+        timer = window.setInterval(changePage, 2500);
+    }
+
+    function stopAnimation(){
+        window.clearInterval(timer);
+    }
+
+    function resetAppImages(){
+        resetBtn.disabled = true;
+        pageIndex = 0;
+        console.log("resetting");
+        currentDark.style.display = "none";
+        currentDark = darkImages[pageIndex];
+        
+        currentLight.style.display = "none";
+        currentLight = lightImages[pageIndex];
+        
+        if (isDark){
+            currentDark.style.display = "block";
+            fadeIn(currentDark, 1000)
+            console.log("next page dark");
+        }
+        else{
+            currentLight.style.display =  "block";
+            fadeIn(currentLight, 1000)
+            console.log("next page light");
+        }
+    }
+
+    function fadeIn(el, time) {
+        el.style.opacity = 0.5;
+
+      var last = +new Date();
+      var tick = function() {
+        el.style.opacity = +el.style.opacity + (new Date() - last) / time;
+        last = +new Date();
+
+        if (+el.style.opacity < 1) {
+          (window.requestAnimationFrame && requestAnimationFrame(tick)) || setTimeout(tick, 16);
+        }
+      };
+      tick();
+    }
+
+    function changePage(){
+        
+        if (resetBtn.disabled){
+            resetBtn.disabled = false;
+        }
+        pageIndex += 1;
+        
+        if (pageIndex == 4){
+            pageIndex = 0;
+        }
+        
+        currentDark.style.display =  "none";
+        currentDark = darkImages[pageIndex];
+            
+        currentLight.style.display =  "none";
+        currentLight = lightImages[pageIndex]
+        
+        if (isDark){
+            currentDark.style.display =  "block";
+            fadeIn(currentDark, 1000)
+            console.log("next page dark");
+        }
+        else{
+            currentLight.style.display =  "block";
+            fadeIn(currentLight, 1000)
+            console.log("next page light");
+        }
+    }
 
     function changeMode() {
-        if (lightFeed.style.display == "none"){
+        
+        if (isDark){
             console.log("Switching to light mode");
-            lightFeed.style.display = "block";
-            darkFeed.style.display = "none";
+            currentLight.style.display = "block";
+            currentDark.style.display = "none";
             modeBtn.innerText = "View in Dark Mode";
+            isDark = false;
         }
         else{
             console.log("Switching to dark mode");
-            darkFeed.style.display = "block";
-            lightFeed.style.display = "none";
+            currentDark.style.display = "block";
+            currentLight.style.display = "none";
             modeBtn.innerText = "View in Light Mode";
+            isDark = true;
         }
     }
 

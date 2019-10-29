@@ -11,7 +11,7 @@
       }
 
       body{
-        background-image: url(Images/treeofLife.jpg);
+        background-image: url(Images/ClimateCrisis-help.png);
         background-position:left top;
         background-repeat: no-repeat;
         background-size: 100% 1400px;
@@ -22,30 +22,28 @@
     }
     .topnav a {
       float: left;
-      color: #b8ff2f;
+      color: white;
+      text-decoration: none;
       text-align: center;
       padding: 14px 16px;
       font-family: 'Open Sans', sans-serif;
       font-size: 25px;
       border-radius: 10px;
+      margin-right: 8px;
     }
     .topnav a:hover {
-      background-color: #b8ff2f;
+      background-color: white;
       color: black;
       transition: 0.4s;
-      border: 1px solid;
       padding: 10px;
-      box-shadow: 5px 10px 18px black;
-      border-color: black;
+      box-shadow: 10px 10px rgba(0,0,0,.4);
     }
     .topnav a.active {
-      background-color: #b8ff2f;
+      background-color: white;
       color: black;
-      border: 1px solid;
       padding: 10px;
-      box-shadow: 5px 10px 18px black;
-      border-color: black;
-    }
+      box-shadow: 10px 10px rgba(0,0,0,.4);
+      }
     .infonav{
       color: Green;
       position: absolute;
@@ -189,7 +187,7 @@
       }
       if(value==3){
         document.getElementById("infotext").innerHTML = "icecaps";
-        document.body.style.backgroundImage = "url('Images/icecaps.jpg')";
+        document.body.style.backgroundImage = "url('Images/ClimateCrisis-ice.png')";
         buttonClicked  = document.getElementById("b3");
         buttonClicked.classList.add("active");
         buttonClicked  = document.getElementById("b1");
@@ -201,7 +199,7 @@
       }
       if(value==4){
         document.getElementById("infotext").innerHTML = "help";
-        document.body.style.backgroundImage = "url('Images/treeofLife.jpg')";
+        document.body.style.backgroundImage = "url('Images/ClimateCrisis-help.png')";
         buttonClicked  = document.getElementById("b4");
         buttonClicked.classList.add("active");
         buttonClicked  = document.getElementById("b1");

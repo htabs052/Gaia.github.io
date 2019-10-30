@@ -75,6 +75,15 @@
     .infonav button:hover {
       color: white;
       transition: 0.3s;
+      border: 1px solid;
+      box-shadow: 5px 10px 18px black;
+      border-color: black;
+    }
+    .active{
+      border: 1px solid;
+      box-shadow: 5px 10px 18px black;
+      border-color: black;
+      background: rgba(28,133,56)
     }
     #textbox{
       position: absolute;
@@ -154,13 +163,13 @@
       document.getElementById("infotext").innerHTML = "<p>Forests around the world, on every continent are under attack. During the one minute that you visited our website 27 soccer fields of trees have been cut down. That is equivalent to 18.7 million acres every single year. These losses are primarily due to expanding agriculture and fires. Mike Flannigan, a researcher for the Canadian Forest Service, found that climate change will worsen the frequency of wildfires. This is due to the abundance of dry wood, frequent lightning strikes and dry windy weather which is caused by climate change. For further reading we recommend:</p><a href='https://climateatlas.ca/forest-fires-and-climate-change'>The Climate Atlas</a><br><a href='https://www.worldwildlife.org/threats/deforestation-and-forest-degradation'>The World Wildlife Org</a>";
       document.body.style.backgroundImage = "url('Images/ClimateCrisis-deforestation.png')";
       buttonClicked  = document.getElementById("b1");
-      buttonClicked.style.background ="rgba(28,133,56)";
+      buttonClicked.classList.add("active");
       buttonClicked  = document.getElementById("b2");
-      buttonClicked.style.background ="#aee69c";
+      buttonClicked.classList.remove("active");
       buttonClicked  = document.getElementById("b3");
-      buttonClicked.style.background ="#aee69c";
+      buttonClicked.classList.remove("active");
       buttonClicked  = document.getElementById("b4");
-      buttonClicked.style.background ="#aee69c";
+      buttonClicked.classList.remove("active");
       }
       if(value==2){
         document.getElementById("infotext").innerHTML = "Plastic";
@@ -168,37 +177,37 @@
         document.getElementById("infotext").innerHTML = "<p>Did you know? Plastic has been found inside 60% of all seabirds and in every single sea turtle species. This is due to the 8 million metric tons of plastic getting dumped into our oceans annually. The impact that this unprecedented level of pollution has on our marine ecosystems goes without question. To put it in perspective, every single minute a garbage truck filled to the brim with plastic is carelessly dumped into the ocean. We have a duty to our planet and the diverse ecosystems that inhabit our waters. See for yourself the widespread impact this senseless pollution is creating on our environment:</p><a href='https://oceanconservancy.org/trash-free-seas/plastics-in-the-ocean/'>The Ocean Conservancy Org</a>";
 
         buttonClicked  = document.getElementById("b2");
-        buttonClicked.style.background ="rgba(28,133,56)";
+        buttonClicked.classList.add("active");
         buttonClicked  = document.getElementById("b1");
-        buttonClicked.style.background ="#aee69c";
+        buttonClicked.classList.remove("active");
         buttonClicked  = document.getElementById("b3");
-        buttonClicked.style.background ="#aee69c";
+        buttonClicked.classList.remove("active");
         buttonClicked  = document.getElementById("b4");
-        buttonClicked.style.background ="#aee69c";
+        buttonClicked.classList.remove("active");
       }
       if(value==3){
         document.getElementById("infotext").innerHTML = "icecaps";
         document.body.style.backgroundImage = "url('Images/ClimateCrisis-ice.png')";
         buttonClicked  = document.getElementById("b3");
-        buttonClicked.style.background ="rgba(28,133,56)";
+        buttonClicked.classList.add("active");
         buttonClicked  = document.getElementById("b1");
-        buttonClicked.style.background ="#aee69c";
+        buttonClicked.classList.remove("active");
         buttonClicked  = document.getElementById("b2");
-        buttonClicked.style.background ="#aee69c";
+        buttonClicked.classList.remove("active");
         buttonClicked  = document.getElementById("b4");
-        buttonClicked.style.background ="#aee69c";
+        buttonClicked.classList.remove("active");
       }
       if(value==4){
         document.getElementById("infotext").innerHTML = "help";
         document.body.style.backgroundImage = "url('Images/ClimateCrisis-help.png')";
         buttonClicked  = document.getElementById("b4");
-        buttonClicked.style.background ="rgba(28,133,56)";
+        buttonClicked.classList.add("active");
         buttonClicked  = document.getElementById("b1");
-        buttonClicked.style.background ="#aee69c";
+        buttonClicked.classList.remove("active");
         buttonClicked  = document.getElementById("b3");
-        buttonClicked.style.background ="#aee69c";
+        buttonClicked.classList.remove("active");
         buttonClicked  = document.getElementById("b2");
-        buttonClicked.style.background ="#aee69c";
+        buttonClicked.classList.remove("active");
       }
     }
     </script>

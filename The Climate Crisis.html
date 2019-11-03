@@ -69,7 +69,7 @@
     }
     .infonav p{
       text-align: justify;
-      color: white;
+      color: black;
       vertical-align: text-top;
     }
     .infonav button:hover {
@@ -109,7 +109,7 @@
       }
       #climateInfoTitle{
         font-family: 'Open Sans', sans-serif;
-        color: white;
+        color: black;
         font-size: 20px;
         position: relative;
         width:700px;
@@ -117,9 +117,12 @@
         left:300px;
         text-decoration: underline;
       }
+      #infotext{
+        color: black;
+      }
       .climateInfo{
         font-family: 'Open Sans', sans-serif;
-        color: white;
+        color: black;
         font-size: 15px;
         position:relative;
         bottom:200px;
@@ -184,8 +187,9 @@
         buttonClicked.classList.remove("active");
       }
       if(value==3){
-        document.getElementById("infotext").innerHTML = "icecaps";
         document.body.style.backgroundImage = "url('Images/ClimateCrisis-ice.png')";
+        document.getElementById("infotext").innerHTML = "<p>According to NASA, Greenland's ice mass is disappearing at a rate of 286 gigatons of ice every single year. Many animals are suffering from the amount of ice that is vanishing into the ocean. As the global temperature continues to rise year after year, more ice is expected to melt away devastating artic ecosystems and further escalating the climate crisis. The IPCC predicts that with a simple increase of 1.5 degrees Celsius, climate feedback loop tipping points will send the Earth into a spiral of runaway climate change. From more reading on these topics we suggest:</p><a href='https://climate.nasa.gov/vital-signs/global-temperature/'>NASA - Global Temperature</a><br><a href='https://www.theguardian.com/environment/2018/oct/09/tipping-points-could-exacerbate-climate-crisis-scientists-fear'>The Guardian - Runaway Climate Crisis</a>";
+
         buttonClicked  = document.getElementById("b3");
         buttonClicked.classList.add("active");
         buttonClicked  = document.getElementById("b1");
@@ -196,7 +200,7 @@
         buttonClicked.classList.remove("active");
       }
       if(value==4){
-        document.getElementById("infotext").innerHTML = "help";
+        document.getElementById("infotext").innerHTML = "By teaming up with Gaia you ensure that you are contributing towards helping the planet. The climate crisis isn’t a single solution issue. It isn’t going to be resolved by one person, or even a single corporation. It’s going to take every single one of us working together, being conscious about the pollution in our waters, air and land. It will require everyone being aware of their consumption of waste that doesn’t break down. All of this is possible with Gaia where every dollar donated or earned goes toward an environmental charity of your choice. Become a member of our team, and an ambassador for our planet. Download Gaia today.";
         document.body.style.backgroundImage = "url('Images/ClimateCrisis-help.png')";
         buttonClicked  = document.getElementById("b4");
         buttonClicked.classList.add("active");

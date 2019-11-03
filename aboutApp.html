@@ -14,6 +14,8 @@
         display: block;
         margin-bottom: 10px;
     }
+    
+    
 
     #feedLight {
         
@@ -120,6 +122,12 @@
     /* Container holding the image and the text */
     .container {
       position: relative;
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      margin-top: 10px;
+      
+
     }
 
     .text-block {
@@ -128,12 +136,14 @@
       left: 0px;
       bottom: 0px;
       top: 0px;
-      background-color: rgba(209, 209, 209, 0.25);
-      color: white;
+      background-color: rgba(9, 9, 9, 0.25);
+      color: rgba(25, 25, 25, 1);
       padding-left: 30px;
       padding-right: 30px;
       font-family: 'Arial Rounded MT Bold';
       font-size: 30px;
+      border-radius: 25px;
+
     }
 
     #header {
@@ -179,16 +189,7 @@
       font-size: 35px;
       color:rgb(121, 255, 59);
     }
-    .centered{
-       position: absolute;
-       top: 5%;
-       left: 50%;
-       color:white;
-       font-family: 'Arial Rounded MT Bold';
-       font-size: 30px;
-       text-decoration: bold;
-       transform: translate(-50%, -50%);
-    }
+ 
     #overlay {
         position: absolute; /* Sit on top of the page content */
         display: block; /* Hidden by default */
@@ -255,9 +256,6 @@
       <a href="donations.html">Donate</a>
     </div>
     <div class="container">
-        <div class = "centered">
-            <h1>How Gaia Works</h1>
-        </div>
       <div class="text-block">
         <p>Gaia is a social media application where you can earn points based on your contribution to helping the environment.</p>
         <div id= "PhoneInfo">

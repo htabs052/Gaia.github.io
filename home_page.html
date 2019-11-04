@@ -13,6 +13,8 @@
 			border-radius: 5px;
 			padding: 14px 16px;
 			font-size: 14px;
+				font-family: 'Candara';
+		    	font-style: bold;
 		}
 		.LearnMore-button:hover {
 			transform: scale(1.1);
@@ -25,7 +27,7 @@
 			transition: 0.4s;
 		}
 		.bodyText {
-	  		margin: 0px 300px 0px 300px;
+	  		margin: auto;
 	  		padding: 20px;
 	  		background-color: rgba(0,0,0,.7);
 	  		font-family: 'Open Sans', sans-serif;
@@ -62,8 +64,9 @@
 	    	text-decoration: none;
 	    	text-align: center;
 	    	padding: 14px 16px;
-	    	font-family: 'Open Sans', sans-serif;
-	    	font-size: 25px;
+	    	font-family: 'Candara';
+		    	font-style: bold;
+		    	font-size: 25px;
 	    	border-radius: 10px;
 	    	margin-right: 8px;
 	    }
@@ -117,7 +120,9 @@
 	  			margin-bottom: 200px;
 	  		}
 	  		#downloadNow {
-	  			font-size: 30px;
+	  			font-family: 'Candara';
+			    	font-style: bold;
+			    	font-size: 30px;
 	  		}
 	  		.downloadButton {
 	  			height: 20%;
@@ -129,68 +134,69 @@
 	  		}
 	  		#aboutGaia {
 	  			font-size: 25px;
+	  			margin: 0px 300px 0px 300px;
 	  		}
 		</style>
 
-		<!-- TRAILER & PREVIEW -->
-		<span id="tp-body">
-			<div id="trailer-preview">
-				<iframe id="trailer"  src="https://www.youtube.com/embed/yQCREgz4tQY"></iframe>
-				<img id="preview" src="Images/Iphone-preview.png" alt="phone-preview" align="right" height="300">
-			</div>
-		</span>
-		<style>
-			#tp-body {
-				padding: 300px 10px 0px 10px;
-			}
-			#trailer-preview {
-				background-color: #70acbd;
-				height: 600px;
-				width: 100%;
-			}
-			#trailer {
-				height: 60%;
-				width: 45%;
-				margin: 100px 0px 0px 50px
-			}
-			#preview {
-				padding: 30px 130px 0px 0px;
-				height: 90%;
-				width: auto;
-			}
-		</style>
-		<!--
-		*PokemonGo trailer is just a stand in (make trailer and upload to YouTube)
-		-->
-
 		<!-- THE CLIMATE EMERGENCY -->
-		<div id="climateEmerg-bloc">
-			<div class="bodyText" id="climateEmerg">
+		<div id="climateEmerg-section">
+			<div class="bodyText" id="climateEmerg-bloc">
 				<h2 class="textHeader">The climate emergency</h2>
-				<div>
-					In the past few decades, we haven't been treating our home with the respect it deserves!
-					<button class="LearnMore-button"><a href="The Climate Crisis.html" target="_blank">Learn More >>></a></button>
-				</div>
+				<p id="climateEmerg-text">In the past few decades, we haven't been treating our home with the respect it deserves!
+					<div id = climateCrisis-button><button class="LearnMore-button"> <a href="The Climate Crisis.html" target="_blank">Learn More >>></a></button></div>
+				</p>
+			</div>
+			<div id="iphonePreview">
+				<img src="Images/Iphone-preview.png" id="iPhone">
+				<video width="230" autoplay loop muted id="trashvideo">
+					<source src="Images/HomePage/Video.mp4">
+				</video>
 			</div>
 		</div>
-		<!--
-		*Have image as bg
-		*Have the text over a solid block of colour
-		-->
+
 		<style>
+			#climateEmerg-section {
+				background-image: url(Images/HomePage/1.png);
+				background-repeat: none;
+				background-size: 100%;
+				padding: 300px 0px 300px 0px;
+			}
 			#climateEmerg-bloc {
-				background-color: #ff8e72;
-				padding: 300px 10px 0px 10px;
+				margin: 0px 600px 0px 50px;
 			}
 			.textHeader {
-				font-family: 'Bookman';
+				font-size: 30px;
+				font-family: 'Candara';
+		    		font-style: bold;
+			}
+			#climateEmerg-text {
+				font-size: 40px;
+			}
+			#climateCrisis-button {
+				position: absolute;
+				top: 1505px;
+				left: 430px;
+				bottom: 40px;
+			}
+			#trashvideo {
+				position: absolute;
+				z-index: 1;
+				left: 930px;
+				top: 1200px;
+			}
+			#iPhone {
+				position: absolute;
+				left: 846px;
+				top: 1090px;
+				height: 650px;
+				width: auto;
 			}
 		</style>
 	</body>
 
 	<!-- FOOTER -->
 	<footer>
-		<div align="center"><small><small>&copy; GUPPI 2019</small></small></div>
+		<div align="center"><small><small>&copy; Gaia 2019</small></small></div>
 		<span></span>
 	</footer>
 	<!--

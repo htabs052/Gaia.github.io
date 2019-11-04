@@ -1,37 +1,20 @@
+<!DOCTYPE html>
 <html>
+<head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://fonts.googleapis.com/css?family=Audiowide&display=swap" rel="stylesheet">
 <title>Gaia | Our Team</title>
 <style>
-  body {
-    background-image: url(Images/teamPage-background.png);
-    background-size: 100%;
-    }
 
-  h1 {
-    color: white;
-  }
-
-  h5 {
-    color: white;
-  }
-
-  * {
-    box-sizing: border-box;
-  }
-
-  .column {
+  #Logo{
+    height: 80px;
     float: left;
-    width: 33.33%;
-    padding: 10px;
-    height: 300px;
+    }
+  /* Container holding the image and the text */
+  .container {
+    position: relative;
     }
 
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-    }
   .topnav {
     overflow: hidden;
   }
@@ -59,32 +42,82 @@
     padding: 10px;
     box-shadow: 10px 10px rgba(0,0,0,.4);
   }
-  #Logo{
-    height: 80px;
-    float: left;
-    }
-  /* Container holding the image and the text */
-  .container {
-    position: relative;
+
+
+ table.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+html, body {
+    width: 100%;
+}
+
+  body {
+    background-image: url(Images/teamPage-background.png);
+    background-size: 100%;
     }
 
-  .text-block {
-    position: absolute;
-    right: 10px;
-    left: 10px;
-    bottom: 10px;
-    top: 10px;
-    background-color: rgba(209, 209, 209, 0.75);
-    color: white;
-    padding-left: 20px;
-    padding-right: 20px;
-    color: rgba(48, 48, 48, 1);
-    font-family: 'Arial';
-    font-size: 30px;
-    }
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
 </style>
-
+</head>
 <body>
+
     <header>
       <div class="topnav">
         <img id="Logo" src="Images/finallogo.png" alt="">
@@ -96,49 +129,90 @@
       </div>
     </header>
 
+<h2>Our Team</h2>
+<p>Meet the people behind GAIA.</p>
+<br>
 
-  </head>
+<table style="width:100%">
 
-    <div class="container">
-      <div class="text-block">
-      <div style="text-align: center;">
-        <h1>Our Team</h1>
-        <p>Meet the people that created Gaia.</p>
 
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="img1.jpg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Jane Doe</h2>
+        <p class="title">CEO &amp; Founder</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>example@example.com</p>
+        <p><button class="button">Contact</button></p>
       </div>
+    </div>
+  </div>
 
 
 
- <div class="row">
-  <div class="column" style="background-color:#lightblue;">
-<img src="https://ksassets.timeincuk.net/wp/uploads/sites/55/2018/01/Jake-Paul-920x584.jpg" alt="Jake Paul";
-style="width: 200px; height: 150px">
-<h5><strong>Jake Kellett</strong></h5>
+  <div class="column">
+    <div class="card">
+      <img src="img2.jpg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Mike Ross</h2>
+        <p class="title">Art Director</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>example@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="column">
+    <div class="card">
+      <img src="img3.jpg" alt="John" style="width:100%">
+      <div class="container">
+        <h2>John Doe</h2>
+        <p class="title">Designer</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>example@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
 </div>
 
-<div class="row">
-  <div class="column" style="background-color:#lightblue;">
-<img src="https://www.thefamouspeople.com/profiles/images/anthony-trujillo-1.jpg" alt="Anthony Trujillo" width="200px" height="150px">
-<h5><strong>Arta Kouroshnia</strong></h5>
+
+
+  <div class="column">
+    <div class="card">
+      <img src="img3.jpg" alt="John" style="width:100%">
+      <div class="container">
+        <h2>John Doe</h2>
+        <p class="title">Designer</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>example@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+</tr>
+
+
+  <div class="column">
+    <div class="card">
+      <img src="img3.jpg" alt="John" style="width:100%">
+      <div class="container">
+        <h2>John Doe</h2>
+        <p class="title">Designer</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>example@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
 </div>
 
-<div class="row">
-  <div class="column" style="background-color:#lightblue;">
-  <img src="https://img2.nickiswift.com/img/gallery/the-untold-truth-of-erika-costell/erika-costell-was-a-cheerleader-before-she-was-a-model-1570819683.jpg" alt="Erika Costell" width="200px" height="150px">
-  <h5><strong>Thuy-Vi Le</strong></h5>
-</div>
 
-<div class="row">
-  <div class="column" style="background-color:#lightblue;">
-  <img src="https://marriedbiography.com/wp-content/uploads/2018/02/Chance-Sutton.jpg" alt="Chance Sutton" width="200px" height="150px">
-  <h5><strong>Hicham Tabsissi</strong></h5>
-</div>
 
-<div class="row">
-  <div class="column" style="background-color:#lightblue;">
-  <img src="https://www.tubefilter.com/wp-content/uploads/2018/01/tessa-team-10.jpg" alt="Tessa Brooks" width="200px" height="150px">
-  <h5><strong>Cadence Yeung</strong></h5>
-</div>
-  </body>
 
-</html>

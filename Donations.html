@@ -7,7 +7,10 @@
     <title>Gaia | Donations</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style>
-
+    *, html {
+      margin: 0px;
+      padding: 0;
+    }
     body {
 	  	background-image: url(Images/donate-background.png);
   		background-size: cover;
@@ -408,6 +411,66 @@
 	text-decoration: underline;
 	font-style: normal;
 }
+    footer {
+      background-color: #6ac288;
+      padding: 150px 80px 170px 80px;
+      margin-top: 150px;
+    }
+    #socialMedia {
+      position: absolute;
+      top: 1700px;
+    }
+    .socialIcon {
+      height: 12%;
+      width: 12%;
+      position: relative;
+    }
+    .socialIcon:hover {
+      transform: scale(1.2);
+      transition: .4s;
+    }
+    #footerHeader {
+      color: white;
+    }
+    .footerText {
+      color: white;
+      font-size: 25px;
+    }
+    .footerLink {
+      text-decoration: none;
+      color: #51a36d;
+      font-size: 25px;
+    }
+    .footerLink:hover {
+      color: white;
+      transition: 0.4s;
+    }
+    /*SECTIONS*/
+    #contactInformation {
+      position: absolute;
+      z-index: 1;
+      top: 1700px;
+      left: 200px;
+    }
+    #sitemap {
+      position: absolute;
+      z-index: 1;
+      top: 1700px;
+      left: 600px;
+    }
+    #community {
+      position: absolute;
+      z-index: 1;
+      top: 1700px;
+      left: 880px;
+    }
+    #copyright {
+      color: #51a36d;
+      position: relative;
+      margin-right: auto;
+      margin-left: auto;
+      top: 150px;
+    }
     </style>
   <script>
     var firstName = "";
@@ -558,4 +621,37 @@
     <a href="#"><center>Going Up!</center></a>
     </div>
   </body>
+    <!-- FOOTER -->
+  <footer>
+    <div id="socialMedia">
+      <a href="#" target="_blank"><img src="Images/Footer/facebookIcon.png" class="socialIcon"></a><br>
+      <a href="#" target="_blank"><img src="Images/Footer/twitterIcon.png" class="socialIcon"></a><br>
+      <a href="https://www.instagram.com/gaia_app_official/" target="_blank"><img src="Images/Footer/instagramIcon.png" class="socialIcon"></a><br>
+    </div>
+
+    <div id="contactInformation">
+      <h1 id="footerHeader">Contact</h1><br>
+      <p class="footerText">550 Cumberland Street</p>
+      <P class="footerText">Ottawa ON K1N 6N5
+      Canada</P>
+      <P class="footerText">Phone: 613-562-5700</P>
+    </div>
+
+    <div id="sitemap">
+      <h1 id="footerHeader">Sitemap</h1><br>
+      <a href="aboutApp.html" class="footerLink">About the app</a><br>
+      <a href="The Climate Crisis.html" class="footerLink">The climate crisis</a><br>
+      <a href="teampage.html" class="footerLink">About the team</a><br>
+      <a href="Donations.html" class="footerLink">Donate</a>
+    </div>
+
+    <div id="community">
+      <h1 id="footerHeader">Community</h1><br>
+      <a href="#" class="footerLink">Customer service</a><br>
+      <a href="#" class="footerLink">Community guidelines</a><br>
+      <a href="#" class="footerLink">Safety center</a><br>
+    </div>
+
+    <div align="center" id="copyright">&copy; Gaia. Gaia is the result of a first year software engineering project at the University of Ottawa and is not a real product.</div>
+  </footer>
 </html>

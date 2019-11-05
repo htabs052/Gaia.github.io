@@ -13,8 +13,6 @@
 			border-radius: 5px;
 			padding: 14px 16px;
 			font-size: 14px;
-				font-family: 'Candara';
-		    	font-style: bold;
 		}
 		.LearnMore-button:hover {
 			transform: scale(1.1);
@@ -30,8 +28,7 @@
 	  		margin: auto;
 	  		padding: 20px;
 	  		background-color: rgba(0,0,0,.7);
-	  		font-family: 'Open Sans', sans-serif;
-	  			color: white;
+	  		color: white;
 	  		border-radius: 15px;
 	</style>
 
@@ -64,9 +61,8 @@
 	    	text-decoration: none;
 	    	text-align: center;
 	    	padding: 14px 16px;
-	    	font-family: 'Candara';
-		    	font-style: bold;
-		    	font-size: 25px;
+		    font-size: 25px;
+		    font-family: 'Open Sans', sans-serif;
 	    	border-radius: 10px;
 	    	margin-right: 8px;
 	    }
@@ -120,9 +116,8 @@
 	  			margin-bottom: 200px;
 	  		}
 	  		#downloadNow {
-	  			font-family: 'Candara';
-			    	font-style: bold;
-			    	font-size: 30px;
+			    font-size: 30px;
+			    font-family: 'Open Sans', sans-serif;
 	  		}
 	  		.downloadButton {
 	  			height: 20%;
@@ -133,7 +128,8 @@
 	  			transition: 0.4s;
 	  		}
 	  		#aboutGaia {
-	  			font-size: 25px;
+	  			font-size: 30px;
+	  			font-family: 'Open Sans', sans-serif;
 	  			margin: 0px 300px 0px 300px;
 	  		}
 		</style>
@@ -156,7 +152,7 @@
 
 		<style>
 			#climateEmerg-section {
-				background-image: url(Images/HomePage/1.png);
+				background-image: url(Images/HomePage/2.png);
 				background-repeat: none;
 				background-size: 100%;
 				padding: 300px 0px 300px 0px;
@@ -166,17 +162,16 @@
 			}
 			.textHeader {
 				font-size: 30px;
-				font-family: 'Candara';
-		    		font-style: bold;
+				font-family: 'Open Sans', sans-serif;
 			}
 			#climateEmerg-text {
 				font-size: 40px;
+				font-family: 'Open Sans', sans-serif;
 			}
 			#climateCrisis-button {
 				position: absolute;
-				top: 1505px;
-				left: 430px;
-				bottom: 40px;
+				top: 1498px;
+				left: 428px;
 			}
 			#trashvideo {
 				position: absolute;
@@ -196,9 +191,40 @@
 
 	<!-- FOOTER -->
 	<footer>
-		<div align="center"><small><small>&copy; Gaia 2019</small></small></div>
-		<span></span>
+		<div id="footerLinks">
+			<h1 id="footerHeader">Sitemap</h1>
+			<a href="aboutApp.html">About the app</a><br>
+			<a href="The Climate Crisis.html">The climate crisis</a><br>
+			<a href="teampage.html">About the team</a><br>
+			<a href="Donations.html">Donate</a>
+		</div>
+
+		
+
+		<div id="socialMedia">
+			<img src="Images/Footer/facebookIcon.png" id="FB">
+			<img src="Images/Footer/twitterIcon.png" id="Twi">
+			<img src="Images/Footer/instagramIcon.png" id="IG">
+		</div>
+
+		<div align="center" id="copyright">&copy; Gaia. Gaia is the result of a first year software engineering project at the University of Ottawa and is not a real product.</div>
 	</footer>
-	<!--
-	*Add more to footer, undecided
-	-->
+
+	<style>
+		footer {
+			background-color: #6ac288;
+			padding: 100px 30px 100px 30px;
+		}
+		#FB {
+			height: 5%;
+			width: 5%;
+		}
+		#Twi {
+			height: 5%;
+			width: 5%;
+		}
+		#IG {
+			height: 5%;
+			width: 5%;
+		}
+	</style>
